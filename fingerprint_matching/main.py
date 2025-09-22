@@ -34,7 +34,7 @@ def main():
     c = match("orb", "uia_dataset", results_folder + "/uia", True)
     d = match("sift", "uia_dataset", results_folder + "/uia", True)
 
-    with open("performance.txt", "w") as f:
+    with open("performance_report.txt", "w") as f:
         f.write(f"fingerprint matching:\n")
         f.write(f"orb: time used: {a[0]}ms, memory used: {a[1]}mb, CPU time: {a[2]}ms\n")
         f.write(f"sift: time used: {b[0]}ms, memory used: {b[1]}mb, CPU time: {b[2]}ms\n\n")
